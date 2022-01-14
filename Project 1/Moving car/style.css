@@ -1,0 +1,121 @@
+body
+{
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.road1
+{
+    position: absolute;
+    top: 65%;
+    left: -5139px;
+    animation: road1 10s infinite linear reverse;
+}
+.road2
+{
+    position: absolute;
+    top: 65%;
+    left: 0px;
+    animation: road2 10s infinite linear reverse;
+}
+
+.buildings1
+{
+    position: absolute;
+    top: -10%;
+    left: -100%;
+    width: 100%;
+    animation: building1 10s infinite linear reverse;
+}
+.buildings2
+{
+    position: absolute;
+    top: -10%;
+    left: 0px;
+    width: 100%;
+    animation: building2 10s infinite linear reverse;
+}
+
+.car
+{
+    position: absolute;
+    top: 40%;
+    width: 50%;
+    left: 25%;   
+}
+
+.wheel1
+{
+    position: absolute;
+    top: 64%;
+    left: 31.5%;
+    width: 8%;
+    animation: wheel 3s infinite linear;
+}
+.wheel2
+{
+    position: absolute;
+    top: 64%;
+    left: 61.5%;
+    width: 8%;
+    animation: wheel 3s infinite linear;
+}
+
+@keyframes road1
+{
+    from
+    {
+        left: -5139px;
+    }
+    to
+    {
+        left: 0px;
+    }
+}
+@keyframes road2
+{
+    from
+    {
+        left: 0px;
+    }
+    to
+    {
+        left: 5139px;
+    }
+}
+
+@keyframes building1
+{
+    from
+    {
+        left: -100%;
+    }
+    to
+    {
+        left: 0px;
+    }
+}
+@keyframes building2
+{
+    from
+    {
+        left: 0px;
+    }
+    to
+    {
+        left: 100%;
+    }
+}
+
+@keyframes wheel
+{
+    from
+    {
+        transform: rotate(0deg);
+    }
+    to
+    {
+        transform: rotate(360deg);
+    }
+}
