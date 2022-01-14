@@ -48,11 +48,12 @@ body {
 
 .minute {
     height: 30%;
-    left: 49%;
+    left: 50%;
     position: absolute;
     top: 35%;
     transform-origin: left center;
     width: 45%;
+    transform: rotate(-89deg);
 }
 
 .minute-arrow {
