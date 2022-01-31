@@ -54,15 +54,18 @@ body {
     transform-origin: left center;
     width: 45%;
     transform: rotate(-89deg);
+    
 }
 
 .minute-arrow {
     animation: minute-arrow 10s infinite linear;
+    animation-delay: 2s;
 
 }
 
 .hours-arrow {
     animation: hours-arrow 10s infinite linear;
+    animation-delay: 2s;
 }
 
 

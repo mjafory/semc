@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption&family=Righteous&display=swap');
+
+
+
+html {
+    font-family: 'PT Sans Caption', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../images/bird_5_Parrot.jpeg);
+
+    background-attachment: fixed;
+    ackground-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    color: white;
+    padding: 10px;
+    background-color: rgb(0,0,0,0.5);
+}
+
+/*
+h2 {
+    text-align: center;
+    font-size: 2em;
+    color: white;
+}
+*/
+
+.button {
+    color: black;
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border: 2px orange solid;
+    text-decoration: none;
+    padding: 2px;
+}
+
+.groupbox {
+/*
+    display: flex;
+    justify-content: space-evenly;
+*/
+    min-height: 100vh;
+    background-color: rgb(0,0,0,0.5);
+display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+
+
+
+.box1{
+  position: relative;
+  top: 20vh;
+  padding: 10px;
+  margin: 10px;
+  flex: 30%;
+}
+
+.box1:hover {
+/*    filter: drop-shadow(0 0 0.75rem crimson);*/
+}
+
+
+.box2 {
+/*
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 2px solid #660708;
+    width: 30%;
+    height: 50%;
+    margin-top: 5em;
+    transition: filter 1s;
+*/
+}
+
+.box2:hover {
+/*    filter: drop-shadow(0 0 0.75rem crimson);*/
+}
+
+.box1 img {
+    width: 350px;
+    height: 300px;
+    border-radius: 100px 100px 0px 0px;
+    box-shadow: 10px 0px 22px 0px;
+/*    margin: 20%;*/
+/*
+    padding-left: 4%;
+    padding-right: 4%;
+*/
+}
+
+.box2 img {
+    width: 350px;
+    height: 300px;
+/*    margin: 20%;*/
+/*
+    padding-left: 4%;
+    padding-right: 4%;
+*/
+}
+
+
+.md1Body {
+    background-color: white;
+    margin: 10px;
+}
+
+.groupbox p {
+    margin-top: 5em;
+    text-align: center;
+    color: white;
+}
+
+
+
+.activate {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  -webkit-animation-name: fadeIn; /* Fade in the background */
+  -webkit-animation-duration: 0.4s;
+  animation-name: fadeIn;
+  animation-duration: 0.4s
+}
+
+.activate:target {
+    display: block;
+    pointer-events: auto;
+}
+
+
+
+.mtopbox {
+    background-color: crimson;
+}
+
+.mfooter {
+    width: auto;
+    height: auto;
+}
+
+.buy {
+    background-color: crimson;
+    /* Green */
+    border: 4px solid white;
+    color: white;
+    padding: 10px 20px;
+    width: 40%;
+    height: 10%;
+    border-radius: 4em;
+    text-align: center;
+    font-size: 2em;
+    margin: auto;
+}
+
+.imagecenter {
+    display: flex;
+    justify-content: center;
+}
+
+.imagecenter img {
+    width: 20%;
+    border: 2px solid black;
+}
+
+.modal-header a {
+    text-decoration: none;
+    color: white;
+}
+
+.groupbox p,
+.activate p {
+    font-size: 2em;
+
+}
+
+.red {
+    color: crimson;
+    font-size: 3em;
+}
+
+table{
+    padding: 10px;
+    margin: 10px;
+    width: 93%;
+    box-shadow: 0px 0px 22px 0px black;
+}
+
+table .add_cart {
+    border: none;
+    position: relative;
+    box-shadow: 0px 0px 5px 0px white;
+    border-radius: 10px;
+    padding: 8px;
+    width: 100%;
+    display: inline-block;
+}
+
+.add_cart .add_bugtext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.add_cart:hover .add_bugtext {
+  visibility: visible;
+}
+
+.add_cart:hover {
+    background-color: firebrick;
+    color: white;
+}
+
+table td {
+    background-color: darkslateblue;
+    padding: 10px;
+    width: auto;
+    color: white;
+    
+}
+
+table tr:nth-child(1) {
+    background-color: darkslateblue;
+    width: auto;
+    color: white; 
+}
+
+table tr th{
+    padding: 15px;
+    margin: 1px;
+}
+
+table tr th:hover {
+    cursor: pointer;
+    color: gray;
+}
+
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+  position: relative;
+  top: 15vh;
+}
+
+/* The Close Button */
+.close {
+  color: red;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  right: 5vh;
+  padding: 10px;
+  top: 10px;
+  border-radius: 30%;
+  background-color: midnightblue;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 10px;
+  background-color: purple;
+  color: white;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.modal-body {padding: 2px 16px;}
+.modal-body p {
+    text-align: center;
+}
+
+.modal-body img {
+    width: 100%;
+}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+  from {bottom: -300px; opacity: 0} 
+  to {bottom: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+  from {bottom: -300px; opacity: 0}
+  to {bottom: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+
+@media (max-width: 800px) {
+  .box1 {
+    position: relative;
+    top: 5vh;
+    flex: 100%;
+  }
+}
+
+
