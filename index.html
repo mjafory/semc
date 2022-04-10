@@ -5,28 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 <style>
-    body,
-    html {
-        padding: 0px;
+    body {
+        padding: 0;
         margin: 0;
-        height: 100vh;
-        background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
-        clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        background-size: cover;
+/*        background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);*/
+        /* clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%); */
         font-family: sans-serif
     }
 
 
     .top {
         text-align: center;
+        color: aliceblue;
     }
 
 
     .middle {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
         text-align: center;
+        width: 100%;
+    }
+
+    .card {
+      width: 200px;
+      height: 200px;
+      margin: 5px;
+      background-color: #333;
+      border-radius: 10px;
+      outline:1px solid rgba(255, 0, 0, 0.5);
+      outline-offset: -8px;
+      box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.1);
+      position: relative;
+      display: inline-flex;
+      overflow: hidden;
+    }
+    .card-image {
+      position: absolute;;
+      inset:0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: .6;
+      transition: transform .75s;
+    }
+    .card:hover .card-image {
+      transform: scale(1.15);
+    }
+    .card-title {
+      position: absolute;
+      color: white;
+      left: 15px;
+      bottom: 15px;
+      font-size: 20px;
+      text-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+    }
+
+    .card-link {
+      position: absolute;
+      color: white;
+      left: 15px;
+      bottom: 15px;
+      font-size: 12px;
+      text-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
     }
 
 
@@ -40,44 +82,47 @@
         <p>Thank you for checking out</p>
     </div>
     <div class="middle">
-        <h1>COMING SOON</h1>
-        <hr>
-        <p id="demo" style="font-size:30px"></p>
+      <div class="card">
+        <img src="background.jpeg" alt="background_image" class="card-image">
+          <h3 class="card-title">Assigment 1</h3>
+           <a class="card-link" href="click">Viwe</a>
+      </div>
+      <div class="card">
+        <img src="background.jpeg" alt="background_image" class="card-image">
+          <h3 class="card-title">Assigment 1</h3>
+           <a class="card-link" href="click">Viwe</a>
+      </div>
+      <div class="card">
+        <img src="background.jpeg" alt="background_image" class="card-image">
+          <h3 class="card-title">Assigment 1</h3>
+           <a class="card-link" href="click">Viwe</a>
+      </div>
+      <div class="card">
+        <img src="background.jpeg" alt="background_image" class="card-image">
+          <h3 class="card-title">Assigment 1</h3>
+           <a class="card-link" href="click">Viwe</a>
+      </div>
+      <div class="card">
+        <img src="background.jpeg" alt="background_image" class="card-image">
+          <h3 class="card-title">Assigment 1</h3>
+           <a class="card-link" href="click">Viwe</a>
+      </div>
+      <div class="card">
+        <img src="background.jpeg" alt="background_image" class="card-image">
+          <h3 class="card-title">Assigment 1</h3>
+           <a class="card-link" href="click">Viwe</a>
+      </div>
+      <div class="card">
+        <img src="background.jpeg" alt="background_image" class="card-image">
+          <h3 class="card-title">Assigment 1</h3>
+           <a class="card-link" href="click">Viwe</a>
+      </div>
+      <div class="card">
+        <img src="background.jpeg" alt="background_image" class="card-image">
+          <h3 class="card-title">Assigment 1</h3>
+           <a class="card-link" href="click">Viwe</a>
+      </div>
     </div>
-
-
-
-    <script>
-        // Set the date we're counting down to
-        var countDownDate = new Date("May 5, 2022 15:37:25").getTime();
-
-        // Update the count down every 1 second
-        var countdownfunction = setInterval(function() {
-
-            // Get todays date and time
-            var now = new Date().getTime();
-
-            // Find the distance between now an the count down date
-            var distance = countDownDate - now;
-
-            // Time calculations for days, hours, minutes and seconds
-            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-            // Output the result in an element with id="demo"
-            document.getElementById("demo").innerHTML = days + "d " + hours + "h " +
-                minutes + "m " + seconds + "s ";
-
-            // If the count down is over, write some text
-            if (distance < 0) {
-                clearInterval(countdownfunction);
-                document.getElementById("demo").innerHTML = "EXPIRED";
-            }
-        }, 1000);
-    </script>
-
 </body>
 
 </html>
